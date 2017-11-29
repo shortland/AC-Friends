@@ -1,0 +1,6 @@
+{
+  "short_name": "AC - Friends",
+  "name": "Animal Crossing Friends",
+  "theme_color": "rgb(190, 255, 94)",
+  "start_url": "index.html?launcher=true"
+}

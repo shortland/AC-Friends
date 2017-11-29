@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Animal Crossing Friends</title>
+	<meta name="theme-color" content="rgba(190, 255, 94, 1.0)"/>
+	<link rel="manifest" href="js/manifest.json"/>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
+	<script type="text/javascript" src='js/jquery.js'></script>
+	<script type="text/javascript" src='js/jquery_colors.js'></script>
+	<script type="text/javascript" src='js/script.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<div id="market">
+		<div id="buying">
+			<h2><center>Verified</center></h2>
+			<div class="display" style="border-right-width: 1px; border-left-width: 2px;"><table style="width:100%;" id="displayVerified"><tr style="background: rgba(40, 99, 31, 0.4);"><td>ID</td><td>Posted</td></tr></table></div>
+			<div class="belowDisplay" style="padding-right: 15px; padding-left: 5px;">*Verified IDs have been submitted with a screenshot of the account. This ensures the validity of the account.</div>
+		</div>
+		<div id="selling">
+			<h2><center>Unverified</center></h2>
+			<div class="display" style="border-left-width: 1px; border-right-width: 2px;"><table style="width:100%;" id="displayUnverified"><tr style="background: rgba(40, 99, 31, 0.4);"><td>ID</td><td>Posted</td></tr></table></div>
+			<div class="belowDisplay" style="padding-left: 5px; padding-right: 15px;">*Unverified IDs may be invalid. These are user submitted, so there's a chance they were mistyped or random.</div>
+		</div>
+	</div>
+
+
+	<div id = "form" style="display:none;">
+		<form action="action_page.php" method="post">
+		<input type="hidden" name="type" id="formType" value="">
+	  	ID:
+	 	<input type="text" class="user" name="id">
+	  	Quantity:
+	  	<input type="text" class="user" name="quantity">
+	  	Price:
+	  	<input type="text" class="user" name="price">
+	  	<input type="radio" name="marketType" value="buy"> Verified
+	 	<input type="radio" name="marketType" value="sell"> Unverified
+	    <input type="submit" value="Submit">
+	  	</form>
+	</div>
+</body>
+</html>

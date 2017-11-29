@@ -1,0 +1,84 @@
+/*
+* Ilan Kleiman
+* style.css
+* First: 11/28/2017
+* Last: 11/28/2017
+*/
+
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(lato.tff) format('truetype');
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato';
+	color: rgb(26, 66, 19);
+}
+
+body {
+	background-color: rgba(190, 255, 94, 0.5);
+}
+
+#form {
+	position: absolute;
+	width:100%;
+	height:25%;
+	bottom: 1px;
+}
+
+#market {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+#buying {
+	width: calc(50% - 10px);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#selling {
+	width: calc(50% - 10px);
+	left: 50%;
+	margin-top: 10px;
+}
+
+#buying, #selling {
+	position: absolute;
+}
+
+td {
+	text-align: center;
+}
+
+.display {
+	/*
+	inline html
+	border-left: solid 2px white;
+	border-right: solid 2px white;
+	*/
+	border-style: solid;
+	border-color: rgb(40, 99, 31);
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	position: absolute;
+	width: 100%;
+	/min-height: 400px;
+	overflow-y: scroll;
+}
+
+.belowDisplay {
+	position: absolute;
+	/*border: 2px solid white;*/
+	/*background: red;*/
+	width: 100%;
+	height: 50px;
+}
