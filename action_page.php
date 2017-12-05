@@ -5,7 +5,7 @@ if(isset($_GET['method']) && $_GET['method'] == "timestamp") {
 	exit;
 }
 
-$privateFileName = "/secretUsers.json";
+$privateFileName = "/usersPrivate.json";
 
 if(isset($_GET['id'])) $id = $_GET['id'];
 
